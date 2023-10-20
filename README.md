@@ -1,0 +1,94 @@
+# flatdangochallange
+flatdango is a web application that allows users to browse and purchase movie tickets for the Flatiron Movie Theater. This project is developed as part of an assessment to showcase the implementation of a mini web application using JavaScript.
+
+Flatdango Screenshot
+
+Table of Contents
+Project Overview
+Features
+Project Structure
+Installation
+Usage
+API Reference
+Styling and Design
+Contributing
+License
+
+Project Overview 
+
+Flatdango is a simple and user-friendly movie ticket booking application. It provides users with movie details, a list of available movies, and the ability to purchase tickets. The application fetches movie data from a local server with a JSON database (db.json).
+
+Features
+
+Movie Details: Display detailed information about the selected movie, including its title, poster, runtime, showtime, and available tickets.
+
+Movie List: View a menu of all available movies on the left side of the page. Clicking on a movie in the list updates the displayed movie details.
+
+Ticket Booking: Purchase movie tickets by clicking the "Buy Ticket" button. The available ticket count updates dynamically. Users cannot purchase a ticket if there are none available.
+
+Bonus Features (Optional):
+
+Clicking on a movie in the menu replaces the currently displayed movie's details with the new movie's details.
+Sold-out movies are indicated in the menu by changing the button text to "Sold Out" and adding a class of sold-out to the film item.
+Project Structure
+The project is organized with the following files and directories:
+
+index.html: The main HTML file for the web application.
+
+script.js: JavaScript file for handling user interactions, data fetching, and updating the page.
+
+style.css: CSS file for styling the application. It provides a basic layout and styling, which you can further customize.
+
+db.json: Local JSON database containing movie data.
+
+screenshot.png: An image file showing a screenshot of the application.
+
+Installation
+Clone this repository to your local machine using the following command:
+
+bash
+Copy code
+git clone https://github.com/your-username/flatdango.git
+Navigate to the project directory:
+
+bash
+Copy code
+cd flatdango
+Open index.html in your preferred web browser.
+
+Usage
+Browse the list of available movies on the left side of the page.
+
+Click on a movie to view its details, including the poster, title, runtime, showtime, and available tickets.
+
+To purchase a ticket, click the "Buy Ticket" button. The available ticket count will update, and you'll receive a confirmation if successful.
+
+Enjoy your virtual movie ticket booking experience!
+
+API Reference
+The application fetches movie data from a local server with the following API endpoints:
+
+GET /films: Retrieve a list of all available movies.
+
+GET /films/:id: Retrieve detailed information about a specific movie, identified by its id.
+
+PATCH /films/:id: (Optional) Update the number of tickets_sold on the server when a ticket is purchased.
+
+DELETE /films/:id: (Optional) Delete a movie from the server.
+
+Styling and Design
+The application is styled with a basic CSS file (style.css) to provide a clean and user-friendly interface. You can customize the styling further to match your design preferences.
+
+Contributing
+If you'd like to contribute to this project, please follow these steps:
+
+Fork the repository to your own GitHub account.
+
+Create a new branch and make your changes.
+
+Submit a pull request with a clear description of your changes.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details
+
+
